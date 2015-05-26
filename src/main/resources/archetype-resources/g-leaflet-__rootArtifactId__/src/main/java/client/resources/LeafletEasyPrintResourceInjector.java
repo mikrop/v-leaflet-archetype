@@ -25,7 +25,6 @@ public class LeafletEasyPrintResourceInjector {
 	protected void injectResources() {
 		bundle.css().ensureInjected();
 		injectScript(bundle.jquery().getText());
-		injectScript(bundle.jQueryPrint().getText());
 		injectScript(bundle.script().getText());
 	}
 
