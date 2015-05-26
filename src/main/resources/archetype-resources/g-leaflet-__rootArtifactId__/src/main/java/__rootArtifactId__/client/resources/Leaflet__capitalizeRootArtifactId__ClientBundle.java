@@ -1,14 +1,14 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.client.resources;
+package ${package}.${rootArtifactId}.client.resources;
 
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.DataResource.DoNotEmbed;
 import com.google.gwt.resources.client.TextResource;
 
-public interface LeafletEasyPrintClientBundle extends ClientBundle {
+public interface Leaflet${capitalizeRootArtifactId}ClientBundle extends ClientBundle {
 
     @Source("jquery-1.11.2.min.js")
     TextResource jquery();

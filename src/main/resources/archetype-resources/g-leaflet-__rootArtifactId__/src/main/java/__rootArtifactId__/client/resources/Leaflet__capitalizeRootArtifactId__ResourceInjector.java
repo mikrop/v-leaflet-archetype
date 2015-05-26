@@ -1,20 +1,20 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.client.resources;
+package ${package}.${rootArtifactId}.client.resources;
 
 import com.google.gwt.core.client.GWT;
 import org.peimari.gleaflet.client.resources.LeafletResourceInjector;
 
-public class LeafletEasyPrintResourceInjector {
+public class Leaflet${capitalizeRootArtifactId}ResourceInjector {
 
-	protected static LeafletEasyPrintClientBundle bundle;
+	protected static Leaflet${capitalizeRootArtifactId}ClientBundle bundle;
 
 	public static void ensureInjected() {
 		if (bundle == null) {
 			LeafletResourceInjector.ensureInjected();
-			bundle = GWT.create(LeafletEasyPrintClientBundle.class);
-			LeafletEasyPrintResourceInjector injector = GWT.create(LeafletEasyPrintResourceInjector.class);
+			bundle = GWT.create(Leaflet${capitalizeRootArtifactId}ClientBundle.class);
+			Leaflet${capitalizeRootArtifactId}ResourceInjector injector = GWT.create(Leaflet${capitalizeRootArtifactId}ResourceInjector.class);
 			injector.injectResources();
 		}
 	}

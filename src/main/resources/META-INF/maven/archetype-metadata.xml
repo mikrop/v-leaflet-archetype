@@ -11,6 +11,9 @@
         <requiredProperty key="version">
             <defaultValue>1.0.0-SNAPSHOT</defaultValue>
         </requiredProperty>
+        <requiredProperty key="capitalizeRootArtifactId">
+            <!--<defaultValue>${rootArtifactId.substring(0,1).toUpperCase()}${rootArtifactId.substring(1)}</defaultValue>-->
+        </requiredProperty>
     </requiredProperties>
     <fileSets>
         <fileSet encoding="UTF-8">
