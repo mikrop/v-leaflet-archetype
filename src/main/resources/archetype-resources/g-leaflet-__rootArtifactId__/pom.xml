@@ -8,7 +8,7 @@
 		<dependency>
 			<groupId>org.peimari</groupId>
 			<artifactId>g-leaflet</artifactId>
-			<version>0.4.7</version>
+			<version>0.4.11</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.gwt</groupId>
